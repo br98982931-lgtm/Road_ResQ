@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keep Leaflet's internal panes below the surrounding dashboard UI. */
+.roadresq-map-shell {
+	position: relative;
+	z-index: 0;
+	isolation: isolate;
+	overflow: hidden;
+	border-radius: 0.75rem;
+}
+
+.roadresq-map-shell .leaflet-container {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
